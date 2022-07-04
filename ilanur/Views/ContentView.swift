@@ -2,15 +2,14 @@
 //  ContentView.swift
 //  ilanur
 //
-//  Created by Developer Light on 1.07.2022.
+//  by Developer Light on 1.07.2022.
 //
 
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        BottomBar()
     }
 }
 
