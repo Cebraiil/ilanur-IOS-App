@@ -14,14 +14,14 @@
 		0E174997286F551300DEC0BA /* ilanurTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E174996286F551300DEC0BA /* ilanurTests.swift */; };
 		0E1749A1286F551300DEC0BA /* ilanurUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1749A0286F551300DEC0BA /* ilanurUITests.swift */; };
 		0E1749A3286F551300DEC0BA /* ilanurUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1749A2286F551300DEC0BA /* ilanurUITestsLaunchTests.swift */; };
-		0E45BB112871E83000C53C21 /* FavFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E45BB0F2871E83000C53C21 /* FavFunc.swift */; };
-		0E45BB122871E83000C53C21 /* NameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E45BB102871E83000C53C21 /* NameModel.swift */; };
+		0E45BB122871E83000C53C21 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E45BB102871E83000C53C21 /* Model.swift */; };
 		0E45BB172871E84400C53C21 /* NameDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E45BB152871E84400C53C21 /* NameDetail.swift */; };
 		0E45BB182871E84400C53C21 /* NamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E45BB162871E84400C53C21 /* NamesView.swift */; };
 		0E45BB192871E84400C53C21 /* NameCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E45BB142871E84400C53C21 /* NameCard.swift */; };
 		0E45BB1F2871ECC400C53C21 /* NotoKufiArabic-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E45BB1E2871ECC400C53C21 /* NotoKufiArabic-Medium.ttf */; };
 		0E45BB242871ED3F00C53C21 /* ProfileCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E45BB222871ED3F00C53C21 /* ProfileCard.swift */; };
 		0E45BB252871ED3F00C53C21 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E45BB232871ED3F00C53C21 /* SettingsView.swift */; };
+		0E725B2828885822006FA977 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E725B2728885822006FA977 /* Database.swift */; };
 		0EA9F20E286F71A900ACCAD7 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA9F20D286F71A900ACCAD7 /* WelcomeView.swift */; };
 		0EA9F210286F72EA00ACCAD7 /* InformationContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA9F20F286F72EA00ACCAD7 /* InformationContainerView.swift */; };
 		0EA9F212286F730600ACCAD7 /* InformationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA9F211286F730600ACCAD7 /* InformationDetailView.swift */; };
@@ -32,6 +32,7 @@
 		0EA9F21F286F95BE00ACCAD7 /* Adhan in Frameworks */ = {isa = PBXBuildFile; productRef = 0EA9F21E286F95BE00ACCAD7 /* Adhan */; };
 		0EA9F221286F95F000ACCAD7 /* AdhanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA9F220286F95F000ACCAD7 /* AdhanView.swift */; };
 		0EA9F223286F9C1000ACCAD7 /* RequestLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA9F222286F9C1000ACCAD7 /* RequestLocationView.swift */; };
+		0EAB51562884869500463D55 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAB51552884869500463D55 /* ViewModel.swift */; };
 		0EBC2C8D286F569000D62341 /* BottomBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBC2C8C286F569000D62341 /* BottomBar.swift */; };
 		0EE7F58D2870F20F0028C508 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE7F58C2870F20F0028C508 /* Extensions.swift */; };
 		0EE7F58F2870F72D0028C508 /* SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE7F58E2870F72D0028C508 /* SheetView.swift */; };
@@ -66,14 +67,14 @@
 		0E17499C286F551300DEC0BA /* ilanurUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ilanurUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E1749A0286F551300DEC0BA /* ilanurUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ilanurUITests.swift; sourceTree = "<group>"; };
 		0E1749A2286F551300DEC0BA /* ilanurUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ilanurUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		0E45BB0F2871E83000C53C21 /* FavFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavFunc.swift; sourceTree = "<group>"; };
-		0E45BB102871E83000C53C21 /* NameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameModel.swift; sourceTree = "<group>"; };
+		0E45BB102871E83000C53C21 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		0E45BB142871E84400C53C21 /* NameCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameCard.swift; sourceTree = "<group>"; };
 		0E45BB152871E84400C53C21 /* NameDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameDetail.swift; sourceTree = "<group>"; };
 		0E45BB162871E84400C53C21 /* NamesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamesView.swift; sourceTree = "<group>"; };
 		0E45BB1E2871ECC400C53C21 /* NotoKufiArabic-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoKufiArabic-Medium.ttf"; sourceTree = "<group>"; };
 		0E45BB222871ED3F00C53C21 /* ProfileCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileCard.swift; sourceTree = "<group>"; };
 		0E45BB232871ED3F00C53C21 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		0E725B2728885822006FA977 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		0EA9F20D286F71A900ACCAD7 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		0EA9F20F286F72EA00ACCAD7 /* InformationContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformationContainerView.swift; sourceTree = "<group>"; };
 		0EA9F211286F730600ACCAD7 /* InformationDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformationDetailView.swift; sourceTree = "<group>"; };
@@ -84,6 +85,7 @@
 		0EA9F21B286F95A700ACCAD7 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		0EA9F220286F95F000ACCAD7 /* AdhanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdhanView.swift; sourceTree = "<group>"; };
 		0EA9F222286F9C1000ACCAD7 /* RequestLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestLocationView.swift; sourceTree = "<group>"; };
+		0EAB51552884869500463D55 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		0EBC2C8C286F569000D62341 /* BottomBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBar.swift; sourceTree = "<group>"; };
 		0EE7F58C2870F20F0028C508 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		0EE7F58E2870F72D0028C508 /* SheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetView.swift; sourceTree = "<group>"; };
@@ -179,8 +181,9 @@
 		0E45BB132871E83A00C53C21 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				0E45BB0F2871E83000C53C21 /* FavFunc.swift */,
-				0E45BB102871E83000C53C21 /* NameModel.swift */,
+				0EAB51552884869500463D55 /* ViewModel.swift */,
+				0E45BB102871E83000C53C21 /* Model.swift */,
+				0E725B2728885822006FA977 /* Database.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -409,7 +412,6 @@
 				0E174986286F551000DEC0BA /* ilanurApp.swift in Sources */,
 				0EA9F21C286F95A700ACCAD7 /* LocationManager.swift in Sources */,
 				0EA9F216286F732600ACCAD7 /* ButtonModifier.swift in Sources */,
-				0E45BB112871E83000C53C21 /* FavFunc.swift in Sources */,
 				0EBC2C8D286F569000D62341 /* BottomBar.swift in Sources */,
 				0EA9F214286F731300ACCAD7 /* TitleView.swift in Sources */,
 				0E45BB192871E84400C53C21 /* NameCard.swift in Sources */,
@@ -419,12 +421,14 @@
 				0EE7F58F2870F72D0028C508 /* SheetView.swift in Sources */,
 				0EE7F58D2870F20F0028C508 /* Extensions.swift in Sources */,
 				0EA9F210286F72EA00ACCAD7 /* InformationContainerView.swift in Sources */,
-				0E45BB122871E83000C53C21 /* NameModel.swift in Sources */,
+				0E45BB122871E83000C53C21 /* Model.swift in Sources */,
 				0E45BB242871ED3F00C53C21 /* ProfileCard.swift in Sources */,
 				0EA9F223286F9C1000ACCAD7 /* RequestLocationView.swift in Sources */,
 				0E45BB172871E84400C53C21 /* NameDetail.swift in Sources */,
+				0EAB51562884869500463D55 /* ViewModel.swift in Sources */,
 				0EA9F219286F929900ACCAD7 /* SplashView.swift in Sources */,
 				0EA9F221286F95F000ACCAD7 /* AdhanView.swift in Sources */,
+				0E725B2828885822006FA977 /* Database.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,11 +597,12 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.3.0;
+				MARKETING_VERSION = 0.5.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.jz.ilanur;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -624,11 +629,12 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.3.0;
+				MARKETING_VERSION = 0.5.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.jz.ilanur;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

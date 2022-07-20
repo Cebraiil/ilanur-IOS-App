@@ -44,66 +44,46 @@ struct AdhanView: View {
         if locationManager.userLocation == nil {
             RequestLocationView()
         } else if (locationManager.userLocation != nil)  {
-            ZStack {
-                VStack {
-                    VStack(alignment: .leading, spacing: 5) {
-                        Text(cityName)
-                            .bold().font(.title)
-                        Text("Bugün, \(Date.now.formatted(.dateTime.year())) \(month) \(today)")
-                            .font(.subheadline)
-                    }
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .padding(.bottom)
-                    Spacer()
-                    VStack {
-                        VStack {
-                            VStack(spacing:10) {
-                                nextPrayer()
-                                    .font(.title2)
-
-                            }
-                            Text(LocationManager().nextPrayer()!,style: .timer)
-                                .font(.largeTitle)
-                        }
-                    }
-                    Spacer()
+            VStack {
+                VStack(alignment: .leading, spacing: 5) {
+                    Text(cityName)
+                        .bold().font(.title)
+                    Text("Bugün, \(Date.now.formatted(.dateTime.year())) \(month) \(today)")
+                        .font(.subheadline)
                 }
+                .frame(maxWidth: .infinity, alignment: .leading)
                 .padding()
-                
                 VStack {
-                    Spacer()
-                    VStack(alignment: .leading, spacing: 20) {
-                        Text("Ezan Saatleri")
-                            .font(.subheadline)
-                            .bold()
-                            .padding(.bottom)
-                            .padding(.horizontal)
-
-                        HStack {
-                            VStack {
-                                SheetView(img: "sun.haze", name: formattedPrayer(prayer:prayers[0], times: LocationManager().prayerTimes()), value: formattedPrayerTimes(prayer: prayers[0], times: LocationManager().prayerTimes()))
-                                SheetView(img: "sunrise.fill", name: formattedPrayer(prayer:prayers[1], times: LocationManager().prayerTimes()), value: formattedPrayerTimes(prayer: prayers[1], times: LocationManager().prayerTimes()))
-                        
-                                SheetView(img: "sun.max.fill", name: formattedPrayer(prayer:prayers[2], times: LocationManager().prayerTimes()), value: formattedPrayerTimes(prayer: prayers[2], times: LocationManager().prayerTimes()))
-                            }
-                            Spacer()
-                            VStack {
-                                SheetView(img: "sun.min.fill", name: formattedPrayer(prayer:prayers[3], times: LocationManager().prayerTimes()), value: formattedPrayerTimes(prayer: prayers[3], times: LocationManager().prayerTimes()))
-                        
-
-                                SheetView(img: "sunset.fill", name: formattedPrayer(prayer:prayers[4], times: LocationManager().prayerTimes()), value: formattedPrayerTimes(prayer: prayers[4], times: LocationManager().prayerTimes()))
-                                SheetView(img: "moon.stars.fill", name: formattedPrayer(prayer:prayers[5], times: LocationManager().prayerTimes()), value: formattedPrayerTimes(prayer: prayers[5], times: LocationManager().prayerTimes()))
-                            }
-                        }
-                        .padding(2)
+                    Text(LocationManager().nextPrayer()!,style: .timer)
+                        .font(.system(size: 50))
+                    nextPrayer()
+                        .font(.body)
+                }
+                Spacer()
+                Divider()
+                VStack {
+                    HStack {
+                        SheetView(name: formattedPrayer(prayer:prayers[0], times: LocationManager().prayerTimes()), value: formattedPrayerTimes(prayer: prayers[0], times: LocationManager().prayerTimes()))
+                            .frame(maxWidth:.infinity, alignment: .center)
+                        Divider()
+                            .padding(.top)
+                        SheetView(name: formattedPrayer(prayer:prayers[1], times: LocationManager().prayerTimes()), value: formattedPrayerTimes(prayer: prayers[1], times: LocationManager().prayerTimes()))
+                            .frame(maxWidth:.infinity, alignment: .center)
                     }
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .padding()
-                    .padding(.bottom, 20)
-                    .background(Color("sheet"))
-                    .cornerRadius(25, corners: [.topLeft, .topRight])
+                    Divider()
+                    HStack {
+                        SheetView(name: formattedPrayer(prayer:prayers[2], times: LocationManager().prayerTimes()), value: formattedPrayerTimes(prayer: prayers[2], times: LocationManager().prayerTimes()))
+                            .frame(maxWidth:.infinity, alignment: .center)
+
+                        Divider()
+                            .padding(.top)
+                        SheetView(name: formattedPrayer(prayer:prayers[3], times: LocationManager().prayerTimes()), value: formattedPrayerTimes(prayer: prayers[3], times: LocationManager().prayerTimes()))
+                            .frame(maxWidth:.infinity, alignment: .center)
+
+                    }
                 }
             }
+            .frame(maxWidth: .infinity, alignment: .leading)
             .onAppear {
                 getCity()
             }
@@ -171,7 +151,6 @@ struct AdhanView: View {
         }
     }
 }
-
 
 struct AdhanView_Previews: PreviewProvider {
     static var previews: some View {

@@ -2,7 +2,7 @@
 
 import SwiftUI
 
-struct Asmaa: Identifiable, Codable{
+struct Asmaa: Identifiable, Codable {
     var isFaved: Bool
     var id: Int
     var name: String
@@ -10,9 +10,8 @@ struct Asmaa: Identifiable, Codable{
     var shortText: String
     var description: String
 
-    static var Names: [Asmaa] {
+    static var Name: [Asmaa] {
         var Names: [Asmaa] = [
-
             Asmaa(isFaved: false, id: 1, name: "ALLAH c.c.", arabic: "اللَّهُ", shortText: "Tüm isim ve sıfatları kendinde toplayan.", description:"ALLAH c.c. Gördüğümüz görmediğimiz, bildiğimiz bilmediğimiz bütün âlemlerin sâhibi ve mâliki, kâinatın yegâne yaratıcısı, her türlü övgüye ve ibâdete lâyık olan yüceler yücesi Rabbimizin doksan dokuz isminin bütün hususiyetlerini kendinde toplayan en kapsamlı özel adıdır."),
             
             Asmaa(isFaved: false, id: 2, name: "Er-Rahmân    ", arabic: "الرَّحْمَنُ", shortText: "Rahmetiyle muamele eden, esirgeyen.", description:"Er-Rahmân: Rahmet ve merhamet; acıma, bağışlama, kalp yufkalığı, şefkat ve ihsân anlamlarına gelir. “Rahmân” ve “Rahîm” isimleri, “çok şefkat ve merhamet eden” anlamındadır. Kur’ân’da “Rahmân” ismi elli yedi, “Rahîm” ismi yüz on beş defa Allah’a nisbet edilmektedir. “Rahmân”, Allah’ın zâtî ismi, “Rahîm” ise fiilî isimlerindendir. “Rahmân”, zâtî ismi olduğundan Allah’tan başkasına isim olarak verilemez. Fiilî isimlerinden olan “Rahîm” ise başkasına isim olarak verilebilir. Allah’ın bu ismi bir kulda tecelli ederse, o kul merhamet kanatlarını bütün yaratıklara açar. Allah’ın rahmeti bütün yaratılmışları kapsar. Rahmetiyle, inanan inanmayan bütün insanlara rızıklarını ve nimetlerini bol bol vermektedir.Hz. Peygamber Allah’ın rahmetini şöyle anlatır: “Şüphesiz Allah’ın yüz rahmeti vardır. Bunlardan bir tanesini yaratıklarına vermiştir. Yaratıkların birbirlerine acımaları bu rahmet sebebiyledir. Allah’ın rahmetinin doksan dokuzu kıyâmet günü içindir.”"),
@@ -212,7 +211,6 @@ struct Asmaa: Identifiable, Codable{
             Asmaa(isFaved: false, id: 99, name: "Es-Sabûr", arabic: "الصَّبُورُ", shortText: "Çok sabırlı olan.", description:"Es-Sabûr: Çok sabırlı demektir. Allah Teâlâ, günahkârları cezalandırma konusunda acele etmeyip lütfuyla bağışlayan ve erteleyendir. Günahkârlara mühlet tanır. Tövbe kapısını ölünceye kadar açık tutar. Kullarının af ve bağışlama dilemeleri için onlara fırsatlar tanır. Bu isimden nasip alan kul, ibâdetleri yapmada, haramlardan kaçınmada ve her türlü felâket karşısında sabırlı olur.")
         ]
         return Names
-
     }
 }
 

@@ -2,14 +2,13 @@
 //  NameDetail.swift
 //  Adl
 //
-//  Created by Abdul Adl on 20.05.2022.
+//  by Abdul Adl on 20.05.2022.
 //
 
 import SwiftUI
 
 struct NameDetail: View {
-    let asma: Asmaa
-    @StateObject private var vm = ViewModel()
+    @State var asma: Asmaa
     var body: some View {
         ScrollView {
             VStack {
@@ -17,16 +16,16 @@ struct NameDetail: View {
                     VStack(alignment: .leading) {
                         Text(asma.name)
                     }
-                    .frame(maxWidth:.infinity, alignment: .leading)
+                    Spacer()
                     .font(.footnote)
+                    Image(systemName: asma.isFaved ? "circle.fill" : "circle")
+                        .onTapGesture {
+                            asma.isFaved.toggle()
+                        }
                     Button(action: actionSheet) {
                            Image(systemName: "square.and.arrow.up")
                     }
-                    Image(systemName: vm.contains(asma) ? "circle.fill" : "circle")
-                        .onTapGesture {
-                            vm.toggleFav(item: asma)
-                        }
-                    }
+                }
                 VStack {
                     Divider()
                 }
@@ -35,7 +34,7 @@ struct NameDetail: View {
                         .font(.custom(
                             "NotoKufiArabic-Medium",
                             size:.minimum(50, 60)))
-                        .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                        .fontWeight(.bold)
                         .padding(.top)
                         .foregroundColor(Color.gray)
 

@@ -8,21 +8,16 @@
 import SwiftUI
 
 struct SheetView: View {
-    var img: String
     var name: String
     var value: Date
 
     var body: some View {
-        HStack(spacing: 20) {
-            Image(systemName: img)
-                .font(.title2)
-                .padding(5)
-
+        VStack(spacing: 10) {
             VStack(alignment: .leading, spacing: 8) {
                 Text(name)
-                    .font(.footnote)
-                Text(value, formatter: dateFormatter)
                     .font(.body)
+                Text(value, formatter: dateFormatter)
+                    .font(.title)
                     .bold()
              }
          }
@@ -40,6 +35,6 @@ private let dateFormatter: DateFormatter = {
 
 struct SheetView_Previews: PreviewProvider {
     static var previews: some View {
-        SheetView(img: "", name: "", value: Date.now)
+        SheetView(name: "", value: Date.now)
     }
 }
